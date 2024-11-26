@@ -1,0 +1,159 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 2em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: all 300ms ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em rgba(100, 108, 255, 0.4));
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1em rgba(97, 218, 251, 0.4));
+}
+
+.logo.agoric:hover {
+  filter: drop-shadow(0 0 1em rgba(250, 74, 73, 0.4));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: #6b7280;
+}
+
+.piece {
+  width: 6em;
+  border-radius: 10%;
+  transition: transform 0.3s ease;
+}
+
+.piece:hover {
+  transform: scale(1.05);
+}
+
+.coin {
+  width: 2em;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.coin:hover {
+  transform: scale(1.1);
+}
+
+.trade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.trade:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.item-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 25px 15px;
+  margin: 5px;
+}
+
+.row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border: 2px solid #e0e0e0;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 150px;
+  color: #333;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Light theme specific adjustments */
+@media (prefers-color-scheme: light) {
+  .trade {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  input {
+    background: #f9f9f9;
+    border-color: #e0e0e0;
+    color: #333;
+  }
+}
+
+.error {
+  background-color: #fecaca;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+/* Make increment/decrement arrows always visible */
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+/* Additional light theme enhancements */
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
